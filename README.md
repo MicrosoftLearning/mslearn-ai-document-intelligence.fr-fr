@@ -1,2 +1,2 @@
-# mslearn-ai-document-intelligence.fr-fr
-French repo
+# mslearn-document-intelligence
+Fichiers du lab pour les modules Azure AI Intelligence documentaire

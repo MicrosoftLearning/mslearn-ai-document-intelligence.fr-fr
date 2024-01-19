@@ -1,7 +1,7 @@
 ---
 lab:
   title: Utiliser des modèles Intelligence documentaire prédéfinis
-  module: Module 11 - Reading Text in Images and Documents
+  module: Module 6 - Document Intelligence
 ---
 
 # Utiliser des modèles Intelligence documentaire prédéfinis
@@ -16,7 +16,7 @@ Avant de pouvoir appeler le service Azure AI Intelligence documentaire, vous de
 1. Sur la page d’accueil du Portail Azure, accédez à la zone de recherche supérieure, tapez **Intelligence documentaire**, puis appuyez sur **Entrée**.
 1. Sur la page **Intelligence documentaire**, sélectionnez **Créer**.
 1. Sur la page **Créer Intelligence documentaire**, utilisez les éléments suivants pour configurer votre ressource :
-    - **Abonnement**: Votre abonnement Azure.
+    - **Abonnement** : votre abonnement Azure.
     - **Groupe de ressources :** sélectionnez ou créez un groupe de ressources avec un nom unique tel que *DocIntelligenceResources*.
     - **Région** : sélectionnez une région proche de votre emplacement.
     - **Nom** : entrez un nom globalement unique.
@@ -54,7 +54,7 @@ Examinons maintenant l’application qui utilise le Kit de développement logici
 1. Lorsque le référentiel a été cloné, ouvrez le dossier dans Visual Studio Code.
 1. Attendez que des fichiers supplémentaires soient installés pour prendre en charge les projets de code C# dans le référentiel.
 
-    > **Remarque** : Si vous êtes invité à ajouter des ressources requises pour générer et déboguer, sélectionnez **Not Now** (Pas maintenant). Si vous recevez une invitation par le biais du message *Détection d'un projet Azure Function dans le dossier*, vous pouvez le fermer en toute sécurité.
+    > **Remarque** : si vous êtes invité à ajouter des ressources requises pour générer et déboguer, sélectionnez **Not Now** (Pas maintenant). Si vous recevez une invitation par le biais du message *Détection d'un projet Azure Function dans le dossier*, vous pouvez le fermer en toute sécurité.
 
 ## Configuration de votre application
 

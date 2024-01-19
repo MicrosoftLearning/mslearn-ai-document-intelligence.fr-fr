@@ -1,10 +1,10 @@
 ---
 lab:
   title: Extraire les données de formulaires
-  module: Module 11 - Reading Text in Images and Documents
+  module: Module 6 - Document Intelligence
 ---
 
-# Extraire les données de formulaires 
+# Extraire les données de formulaires
 
 Supposons qu’une entreprise demande actuellement à ses employés d’acheter manuellement des feuilles de commande et de saisir les données dans une base de données. Ils souhaitent utiliser des services IA pour améliorer le processus d’entrée de données. Vous décidez de créer un modèle Machine Learning qui lit le formulaire et produit des données structurées qui peuvent être utilisées pour mettre à jour automatiquement une base de données.
 

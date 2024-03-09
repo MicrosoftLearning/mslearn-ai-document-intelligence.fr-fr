@@ -33,8 +33,6 @@ Nous allons utiliser un script pour créer la ressource Azure AI Intelligence d
    ./setup.ps1
    ```
 
-   > **IMPORTANT** : La dernière ressource créée par le script est votre service Azure AI Intelligence documentaire. Si cette commande échoue en raison d’une ressource de niveau F0 que vous avez déjà, utilisez cette ressource pour ce labo ou créez-en une manuellement en utilisant le niveau S0 dans le Portail Azure.
-
 ## Créer le modèle personnalisé Formulaires 1040
 
 Pour créer un modèle composé, nous devons d’abord créer deux modèles personnalisés ou plus. Pour créer le premier modèle personnalisé :

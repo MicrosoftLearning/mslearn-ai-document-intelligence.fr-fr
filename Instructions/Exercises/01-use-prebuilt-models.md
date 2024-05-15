@@ -32,14 +32,15 @@ Commençons par utiliser **Azure AI Document Intelligence Studio** et le modèl
 1. Sous **Analyse de document**, sélectionnez la vignette **Lecture**.
 1. Si vous êtes invité à vous connecter à votre compte, utilisez vos informations d’identification Azure.
 1. Si vous êtes invité à choisir la ressource Azure AI Intelligence documentaire à utiliser, sélectionnez l’abonnement et le nom de la ressource que vous avez utilisés lors de la création de la ressource Azure AI Intelligence documentaire.
-1. Dans la liste des documents à gauche, sélectionnez **read-german.png**.
+1. Dans la liste des documents de gauche, sélectionnez **read-german.pdf**.
 
     ![Capture d’écran montrant la page Lecture dans Azure AI Document Intelligence Studio.](../media/read-german-sample.png#lightbox)
 
+1. En haut à gauche, sélectionnez **Analyser les options**, puis activez la case à cocher **Langage** (sous **Détection facultative**) dans le volet **Analyser les options**, puis cliquez sur **Enregistrer**. 
 1. En haut à gauche, sélectionnez **Exécuter l’analyse**.
 1. Une fois l’analyse terminée, le texte extrait de l’image s’affiche à droite sous l’onglet **Contenu**. Passez en revue ce texte et comparez sa justesse par rapport au texte de l’image d’origine.
 1. Sélectionnez l’onglet **Résultat**. Cet onglet affiche le code JSON extrait. 
-1. Faites défiler jusqu’en bas du code JSON sous l’onglet **Résultat**. Notez que le modèle Lecture a détecté la langue de chaque partie du texte. La plupart des parties sont en allemand (code de langue `de`), mais la dernière partie est en anglais (code de langue `en`).
+1. Faites défiler jusqu’en bas du code JSON sous l’onglet **Résultat**. Notez que le modèle Lecture a détecté la langue de chaque partie du texte. La plupart des étendues sont en Allemand (code de langue `de`), mais vous pouvez trouver d’autres codes de langue dans les étendues (par exemple, Anglais – code de langue `en` – dans l’une des dernières étendues).
 
     ![Capture d’écran montrant la détection de la langue pour deux étendues dans les résultats du modèle de lecture dans Azure AI Document Intelligence Studio.](../media/language-detection.png#lightbox)
 
@@ -137,7 +138,6 @@ Vous êtes maintenant prêt à utiliser le Kit de développement logiciel (SDK) 
 
     ```csharp
     AnalyzeDocumentOperation operation = await client.AnalyzeDocumentFromUriAsync(WaitUntil.Completed, "prebuilt-invoice", fileUri);
-    await operation.WaitForCompletionAsync();
     ```
 
     **Python**

@@ -33,6 +33,8 @@ Nous allons utiliser un script pour créer la ressource Azure AI Intelligence d
    ./setup.ps1
    ```
 
+   > **IMPORTANT** : La dernière ressource créée par le script est votre service Azure AI Intelligence documentaire. Si cette commande échoue en raison d’une ressource de niveau F0 que vous avez déjà, utilisez cette ressource pour ce labo ou créez-en une manuellement en utilisant le niveau S0 dans le Portail Azure.
+
 ## Créer le modèle personnalisé Formulaires 1040
 
 Pour créer un modèle composé, nous devons d’abord créer deux modèles personnalisés ou plus. Pour créer le premier modèle personnalisé :
@@ -44,11 +46,11 @@ Pour créer un modèle composé, nous devons d’abord créer deux modèles pers
 1. Sous **Mes projets**, sélectionnez **+ Créer un projet**.
 1. Dans la zone de texte **Nom du projet**, tapez **Formulaires 1040**, puis sélectionnez **Continuer**.
 1. Dans la page **Configurer la ressource de service**, dans la liste déroulante **Abonnement**, sélectionnez votre abonnement Azure.
-1. Dans la liste déroulante **Groupe de ressources**, sélectionnez le **DocumentIntelligenceResources&lt;xxxx&gt** créé pour vous.
-1. Dans la liste déroulante **Ressource Azure AI Intelligence documentaire ou Azure AI Services**, sélectionnez **DocumentIntelligence&lt;xxxx&gt**
+1. Dans la liste déroulante **Groupe de ressources**, sélectionnez le **DocumentIntelligenceResources&lt;xxxx&gt;** créé pour vous.
+1. Dans la liste déroulante **Ressource Azure AI Intelligence documentaire ou Azure AI Services**, sélectionnez **DocumentIntelligence&lt;xxxx&gt;**.
 1. Dans la liste déroulante **Version de l’API**, vérifiez que **2023-10-31-préversion** est sélectionné, puis sélectionnez **Continuer**.
 1. Dans la page **Se connecter à la source de données de formation**, dans la liste déroulante **Abonnement**, sélectionnez votre abonnement Azure.
-1. Dans la liste déroulante **Groupe de ressources**, sélectionnez **DocumentIntelligenceResources&lt;xxxx&gt**.
+1. Dans la liste déroulante **Groupe de ressources**, sélectionnez **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. Dans la liste déroulante **Compte de stockage**, sélectionnez le seul compte de stockage listé. Si vous avez plusieurs comptes de stockage dans votre abonnement, choisissez celui qui commence par *docintelstorage*
 1. Dans la liste déroulante **Conteneur d’objets blob**, sélectionnez **1040examples**, puis sélectionnez **Continuer**.
 1. Dans la page **Vérifier et créer**, sélectionnez **Créer un projet**.
@@ -60,14 +62,14 @@ Maintenant, étiquetons les champs dans les exemples de formulaires :
 
 1. Dans la page **Données d’étiquette**, en haut à droite, sélectionnez **+ Ajouter un champs**, puis sélectionnez **Champ**.
 1. Tapez **Prénom**, puis appuyez sur *Entrée*.
-1. Dans le document, sélectionnez **John**, puis **Prénom**.
-1. En haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. Sélectionnez le document appelé **f1040_1.pdf** dans la liste de gauche, ensuite **John** et enfin **FirstName**.
+1. En haut à droite de la page, sélectionnez **+ Ajouter un champ**, puis **Champ**.
 1. Tapez **Nom**, puis appuyez sur *Entrée*.
 1. Dans le document, sélectionnez **Doe**, puis **Nom**.
-1. En haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. En haut à droite de la page, sélectionnez **+ Ajouter un champ**, puis **Champ**.
 1. Tapez **Ville**, puis appuyez sur *Entrée*.
 1. Dans le document, sélectionnez **Los Angeles**, puis **Ville**.
-1. En haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. En haut à droite de la page, sélectionnez **+ Ajouter un champ**, puis **Champ**.
 1. Tapez **État**, puis appuyez sur *Entrée*.
 1. Dans le document, sélectionnez **CA**, puis **État**.
 1. Répétez le processus d’étiquetage pour les formulaires restants dans la liste de gauche, en utilisant les étiquettes que vous avez créées. Étiquetez les quatre mêmes champs : *Prénom*, *Nom*, *Ville* et *État*.
@@ -91,11 +93,11 @@ Les exemples de formulaires étant étiquetés, nous pouvons entraîner le premi
 1. Sous **Mes projets**, sélectionnez **+ Créer un projet**.
 1. Dans la zone de texte **Nom du projet**, tapez **Formulaires 1099**, puis sélectionnez **Continuer**.
 1. Dans la page **Configurer la ressource de service**, dans la liste déroulante **Abonnement**, sélectionnez votre abonnement Azure.
-1. Dans la liste déroulante **Groupe de ressources**, sélectionnez **DocumentIntelligenceResources&lt;xxxx&gt**.
-1. Dans la liste déroulante **Ressource Azure AI Intelligence documentaire ou Azure AI Services**, sélectionnez **DocumentIntelligence&lt;xxxx&gt**
+1. Dans la liste déroulante **Groupe de ressources**, sélectionnez **DocumentIntelligenceResources&lt;xxxx&gt;**.
+1. Dans la liste déroulante **Ressource Azure AI Intelligence documentaire ou Azure AI Services**, sélectionnez **DocumentIntelligence&lt;xxxx&gt;**.
 1. Dans la liste déroulante **Version de l’API**, vérifiez que **2023-10-31-préversion** est sélectionné, puis sélectionnez **Continuer**.
 1. Dans la page **Se connecter à la source de données de formation**, dans la liste déroulante **Abonnement**, sélectionnez votre abonnement Azure.
-1. Dans la liste déroulante **Groupe de ressources**, sélectionnez **DocumentIntelligenceResources&lt;xxxx&gt**.
+1. Dans la liste déroulante **Groupe de ressources**, sélectionnez **DocumentIntelligenceResources&lt;xxxx&gt;**.
 1. Dans la liste déroulante **Compte de stockage**, sélectionnez le seul compte de stockage listé.
 1. Dans la liste déroulante **Conteneur d’objets blob**, sélectionnez **1099examples**, puis sélectionnez **Continuer**.
 1. Dans la page **Vérifier et créer**, sélectionnez **Créer un projet**.
@@ -105,16 +107,16 @@ Les exemples de formulaires étant étiquetés, nous pouvons entraîner le premi
 
 À présent, étiquetez les exemples de formulaires avec certains champs :
 
-1. Dans la page **Données d’étiquette**, en haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. Dans la page **Données d’étiquette**, en haut à droite, sélectionnez **+ Ajouter un champs**, puis sélectionnez **Champ**.
 1. Tapez **Prénom**, puis appuyez sur *Entrée*.
-1. Dans le document, sélectionnez **John**, puis **Prénom**.
-1. En haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. Sélectionnez le document appelé **f1099msc_payer.pdf** dans la liste de gauche, ensuite **John** et enfin **FirstName**.
+1. En haut à droite de la page, sélectionnez **+ Ajouter un champ**, puis **Champ**.
 1. Tapez **Nom**, puis appuyez sur *Entrée*.
 1. Dans le document, sélectionnez **Doe**, puis **Nom**.
-1. En haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. En haut à droite de la page, sélectionnez **+ Ajouter un champ**, puis **Champ**.
 1. Tapez **Ville**, puis appuyez sur *Entrée*.
 1. Dans le document, sélectionnez **New Haven**, puis **Ville**.
-1. En haut à droite de la page, sélectionnez **+**, puis sélectionnez **Champ**.
+1. En haut à droite de la page, sélectionnez **+ Ajouter un champ**, puis **Champ**.
 1. Tapez **État**, puis appuyez sur *Entrée*.
 1. Dans le document, sélectionnez **CT**, puis **État**.
 1. Répétez le processus d’étiquetage pour les formulaires restants dans la liste située à gauche. Étiquetez les quatre mêmes champs : *Prénom*, *Nom*, *Ville* et *État*.
@@ -141,10 +143,10 @@ Les deux modèles personnalisés, qui analysent les formulaires fiscaux 1040 et 
 
 Le modèle composé étant terminé, nous allons le tester avec un exemple de formulaire :
 
-1. Dans le studio Azure AI Intelligence documentaire, sélectionnez la page **Test**, puis sélectionnez le **TaxFormsModel** dans la liste déroulante.
+1. Dans le studio Azure AI Intelligence documentaire, sélectionnez la page **Test**, puis sélectionnez **TaxFormsModel** dans la liste déroulante.
 1. Sélectionnez **Parcourir les fichiers**, puis accédez à l’emplacement où vous avez cloné le référentiel.
 1. Sélectionnez **03-composed-model/trainingdata/TestDoc/f1040_7.pdf**, puis sélectionnez **Ouvrir**.
-1. Sélectionnez **Exécuter l’analyse**. Azure AI Intelligence documentaire analyse le formulaire à l’aide du modèle composé.
+1. Cliquez sur **Exécuter l’analyse**. Azure AI Intelligence documentaire analyse le formulaire à l’aide du modèle composé.
 1. Le document que vous avez analysé est un exemple de formulaire fiscal 1040. Vérifiez la propriété **DocType** pour voir si le modèle personnalisé approprié a été utilisé. Vérifiez également les valeurs **Prénom**, **Nom**, **Ville** et **État** identifiées par le modèle.
 
 ## Nettoyer les ressources

@@ -53,6 +53,9 @@ Examinons maintenant l’application qui utilise le Kit de développement logici
 1. Démarrez Visual Studio Code.
 1. Ouvrez la palette (Maj+CTRL+P) et exécutez une commande **Git : Cloner** pour cloner le référentiel `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` vers un dossier local (peu importe quel dossier).
 1. Lorsque le référentiel a été cloné, ouvrez le dossier dans Visual Studio Code.
+
+    > **Remarque** : Si Visual Studio Code affiche un message contextuel qui vous invite à approuver le code que vous ouvrez, cliquez sur l’option **Oui, je fais confiance aux auteurs** dans la fenêtre contextuelle.
+
 1. Attendez que des fichiers supplémentaires soient installés pour prendre en charge les projets de code C# dans le référentiel.
 
     > **Remarque** : si vous êtes invité à ajouter des ressources requises pour générer et déboguer, sélectionnez **Not Now** (Pas maintenant). Si vous recevez une invitation par le biais du message *Détection d'un projet Azure Function dans le dossier*, vous pouvez le fermer en toute sécurité.

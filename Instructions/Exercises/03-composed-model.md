@@ -16,6 +16,8 @@ Nous allons utiliser un script pour créer la ressource Azure AI Intelligence d
 1. Ouvrez la palette (Maj+CTRL+P) et exécutez une commande **Git : Cloner** pour cloner le référentiel `https://github.com/MicrosoftLearning/mslearn-ai-document-intelligence` vers un dossier local (peu importe quel dossier).
 1. Lorsque le référentiel a été cloné, ouvrez le dossier dans Visual Studio Code.
 
+    > **Remarque** : Si Visual Studio Code affiche un message contextuel qui vous invite à approuver le code que vous ouvrez, cliquez sur l’option **Oui, je fais confiance aux auteurs** dans la fenêtre contextuelle.
+    
     > **Remarque** : si vous êtes invité à ajouter des ressources requises pour générer et déboguer, sélectionnez **Not Now** (Pas maintenant). S’il y a d’autres fenêtres contextuelles de Visual Studio Code, vous pouvez les ignorer en toute sécurité.
 
 1. Développez le dossier **Labfiles** dans le volet de gauche, puis cliquez avec le bouton droit sur le répertoire **03-composed-model**. Sélectionnez l’option à ouvrir dans le terminal intégré, puis exécutez le script suivant :

@@ -40,7 +40,7 @@ Commençons par utiliser **Azure AI Document Intelligence Studio** et le modèl
 1. En haut à gauche, sélectionnez **Exécuter l’analyse**.
 1. Une fois l’analyse terminée, le texte extrait de l’image s’affiche à droite sous l’onglet **Contenu**. Passez en revue ce texte et comparez sa justesse par rapport au texte de l’image d’origine.
 1. Sélectionnez l’onglet **Résultat**. Cet onglet affiche le code JSON extrait. 
-1. Faites défiler jusqu’en bas du code JSON sous l’onglet **Résultat**. Notez que le modèle Lecture a détecté la langue de chaque partie du texte. La plupart des étendues sont en Allemand (code de langue `de`), mais vous pouvez trouver d’autres codes de langue dans les étendues (par exemple, Anglais – code de langue `en` – dans l’une des dernières étendues).
+1. Faites défiler jusqu’en bas du code JSON sous l’onglet **Résultat**. Notez que le modèle Lecture a détecté la langue de chaque partie du texte indiquée par `locale`. La plupart des étendues sont en Allemand (code de langue `de`), mais vous pouvez trouver d’autres codes de langue dans les étendues (par exemple, Anglais – code de langue `en` – dans l’une des dernières étendues).
 
     ![Capture d’écran montrant la détection de la langue pour deux étendues dans les résultats du modèle de lecture dans Azure AI Document Intelligence Studio.](../media/language-detection.png#lightbox)
 

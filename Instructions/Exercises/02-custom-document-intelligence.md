@@ -126,9 +126,10 @@ Vous allez maintenant effectuer l’apprentissage du modèle à l’aide des fic
         - Sélectionnez *Continuer*.
     - Sélectionnez *Créer un projet*
 
-1. Une fois votre projet créé, sélectionnez **Effectuer l’apprentissage** pour effectuer l’apprentissage de votre modèle. Utilisez les configurations suivantes :
+1. Une fois votre projet créé, en haut à droite de l’écran, sélectionnez **Effectuer l’apprentissage** pour entraîner votre modèle. Utilisez les configurations suivantes :
     - **ID de modèle** : *indiquez un nom global unique (vous aurez besoin du nom de l’ID de modèle à l’étape suivante)*. 
     - **Mode de génération** : modèle.
+1. Cliquez sur **Accéder aux modèles**.
 1. L’apprentissage peut prendre un certain temps. Une notification s’affiche une fois l’opération terminée.
 
 ## Tester votre modèle Intelligence documentaire personnalisé
@@ -144,7 +145,7 @@ Vous allez maintenant effectuer l’apprentissage du modèle à l’aide des fic
     **Python** :
 
     ```powershell
-    pip install azure-ai-formrecognizer==3.3.0
+    pip install azure-ai-formrecognizer==3.3.3
     ```
 
 1. Dans Visual Studio Code, dans le dossier **Labfiles/02-custom-document-intelligence**, sélectionnez le langage que vous utilisez. Modifiez le fichier de configuration (**appsettings.json** ou **.env**, selon votre préférence de langage) avec les valeurs suivantes :

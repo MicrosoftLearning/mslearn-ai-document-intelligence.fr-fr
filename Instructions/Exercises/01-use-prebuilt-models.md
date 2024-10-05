@@ -14,7 +14,7 @@ Avant de pouvoir appeler le service Azure AI Intelligence documentaire, vous de
 
 1. Dans un onglet de navigateur, ouvrez le Portail Azure à l’adresse [https://portal.azure.com](https://portal.azure.com?azure-portal=true) et connectez-vous avec le compte Microsoft associé à votre abonnement Azure.
 1. Sur la page d’accueil du Portail Azure, accédez à la zone de recherche supérieure, tapez **Intelligence documentaire**, puis appuyez sur **Entrée**.
-1. Sur la page **Intelligence documentaire**, sélectionnez **Créer**.
+1. Sur la page **Intelligence documentaire**, sélectionnez **Créer des solutions d’intelligence documentaire**.
 1. Sur la page **Créer Intelligence documentaire**, utilisez les éléments suivants pour configurer votre ressource :
     - **Abonnement** : votre abonnement Azure.
     - **Groupe de ressources :** sélectionnez ou créez un groupe de ressources avec un nom unique tel que *DocIntelligenceResources*.
@@ -81,7 +81,7 @@ Des applications pour C# et Python sont fournies, ainsi qu’un échantillon de 
     **Python** :
 
     ```powershell
-    pip install azure-ai-formrecognizer==3.3.0
+    pip install azure-ai-formrecognizer==3.3.3
     ```
 
 ## Ajouter du code pour utiliser le service Azure Intelligence documentaire

@@ -97,11 +97,7 @@ Ensuite, **enregistrez** vos modifications.
 1. Dans le terminal du dossier **Labfiles/02-custom-document-intelligence**, entrez la commande suivante pour exécuter le script :
 
     ```PowerShell
-    $currentdir=(Get-Item .).FullName
-    cd ..
     ./setup.cmd
-    cd $currentdir
-
     ```
 
 1. Une fois le script terminé, passez en revue la sortie affichée.
